@@ -1,0 +1,22 @@
+.editor-textarea:focus {
+  outline: none !important; /* Remove focus outline */
+  border: none !important; /* Ensure there's no border on focus */
+}
+
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+}
+
+
+
+.hide-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow: auto;
+}
+
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
