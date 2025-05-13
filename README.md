@@ -1,6 +1,6 @@
 # Code Review App
 
-This is a web application that allows you to write or paste JavaScript code, then submit it for an AI-powered review. The application uses Google's generative AI to provide feedback on the code and suggests improvements.
+This is a web application that allows you to write or paste JavaScript code, then submit it for an AI-powered review. The application uses Google's generative AI to provide feedback on the code and suggests improvements.sffsf
 
 ## Features
 
