@@ -43,6 +43,12 @@ function App() {
       setLoading(false);
     }
   };
+
+  const clearBoard = () => {
+    setCode("");
+    setReview("");
+    setShow(false);
+  };
   return (
     <>
       <main className="flex flex-col md:flex-row items-center gap-4 w-full h-screen p-4 bg-gradient-to-br from-[#1b2b4f] via-[#570f8f] to-[#294ba6]">
@@ -64,13 +70,21 @@ function App() {
             }}
             textareaClassName="editor-textarea"
           />
-          <button
-            type="submit"
-            onClick={reviewCode}
-            className="bg-blue-600 hover:bg-blue-500 px-5 py-2 rounded-full text-lg text-white font-semibold absolute bottom-2 right-2 cursor-pointer select-none "
-          >
-            Check
-          </button>
+          <div className="flex absolute bottom-2 right-2 gap-2">
+            <button
+              onClick={clearBoard}
+              className="bg-red-600 hover:bg-red-500 px-5 py-2 rounded-full text-lg text-white font-semibold  cursor-pointer select-none "
+            >
+              Clear
+            </button>
+            <button
+              type="submit"
+              onClick={reviewCode}
+              className="bg-blue-600 hover:bg-blue-500 px-5 py-2 rounded-full text-lg text-white font-semibold  cursor-pointer select-none "
+            >
+              Review
+            </button>
+          </div>
         </div>
 
         {/* Right part */}
